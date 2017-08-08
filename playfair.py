@@ -10,11 +10,10 @@ def matrix(key):
 		if e not in matrix:
 			matrix.append(e)	
 	
-	#initialize a new list. Is there any elegant way to do that?
-	matrix_group=[]
-	for e in range(5):
-		matrix_group.append('')
-
+	#much smaller initialisation
+	matrix_group=[' ' for e in range(5)]
+	
+	
 	#Break it into 5*5
 	matrix_group[0]=matrix[0:5]
 	matrix_group[1]=matrix[5:10]
